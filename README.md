@@ -1,0 +1,1 @@
+- These are just some basic code I have done, on my journey learning C++. Still a work in progress!
