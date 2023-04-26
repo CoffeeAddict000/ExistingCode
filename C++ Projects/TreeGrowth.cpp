@@ -18,10 +18,9 @@ int main(){
     cout.setf(ios::fixed);
     cout.precision(2);
 
-    for(int agecount = 1 ; agecount <= age; agecount++ ){
+    for(int agecount = age ; agecount <= (age+9); agecount++ ){
 
-        cout << "Height of Tree after " << agecount << " years: " << sqrt(sqrt(mass * agecount)) << " meters\n";
+        cout << "Height of Tree after " << agecount << " years: " << sqrt(sqrt(mass * agecount)) << " meter(s)\n";
 
     }
     return 0;
-}
