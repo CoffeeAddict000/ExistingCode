@@ -16,10 +16,13 @@ int main(){
 
     cout << "You entered the mass of " << mass << " and an age of " << age << " years.\n";
 
-    for(age = 1; age++)
-    {
-        std::cout << "At " << age << " years, tree mass is: " << pow((mass*age),(1/4)); 
+    cout.setf(ios::fixed);
+    cout.precision(2);
+
+    for(int agecount = 1 ; agecount <= age; agecount++ ){
+
+        cout << "Height of Tree after " << agecount << " years: " << sqrt(sqrt(mass * agecount)) << " meters\n";
+
     }
-    
     return 0;
 }
